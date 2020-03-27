@@ -16,3 +16,15 @@ function whileLoop(n) {
   }
   return 'done';
 }
+
+let i = 0;
+
+function incrementVariable() {
+  return ++i;
+}
+
+function doWhileLoop(n) {
+  do {
+    console.log('I run once regardless.');
+  } while(incrementVariable() < n);
+}
